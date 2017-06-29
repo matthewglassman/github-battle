@@ -1,7 +1,7 @@
 var path = require('path');
 
 //the following module will create an index.html file for us and put it in the dist folder
-var HTMLWebpackPlugin = require('html-webpack-plugin')
+var HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: './app/index.js',
