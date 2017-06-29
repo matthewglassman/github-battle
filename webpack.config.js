@@ -9,7 +9,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'index_bundle.js'
 	},
-	modules: {
+	module: {
 		rules: [
 			{ test: /\.(js)$/, use: 'babel-loader' },
 			{ test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
