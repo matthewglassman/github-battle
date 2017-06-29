@@ -19,7 +19,7 @@
     "webpack-dev-server": "^2.5.0"
   },
   "scripts": {
-    "create": "webpack"
+    "start": "webpack-dev-server --open"
   },
   "babel": {
     "presets": ["env", "react"]
