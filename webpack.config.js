@@ -1,5 +1,8 @@
 var path = require('path');
 
+//the following module will create an index.html file for us and put it in the dist folder
+var HTMLWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
 	entry: './app/index.js',
 	output: {
@@ -12,4 +15,7 @@ module.exports = {
 			{ test: /\.css&/, use: [ 'style-loader', 'css-loader' ]}
 		]
 	},
+	plugins: [new HTMLWebpackPlugin({
+		template: 'app/index.html'
+	})]
 }
